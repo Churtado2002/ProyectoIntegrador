@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "6658bdfbca78cdef03b126dd"
+  },
+  "nombre": "Santa",
+  "artista": "Rauw Alejandro",
+  "genero": "Regaeton",
+  "fechaLanzamiento": "26-03-2024",
+  "reproducciones": 4647932
+},
+{
+  "_id": {
+    "$oid": "6658bdfbca78cdef03b126de"
+  },
+  "nombre": "La Original",
+  "artista": "Tini y Emilia",
+  "genero": "Regaeton",
+  "fechaLanzamiento": "03-05-2024",
+  "reproducciones": {
+    "$numberLong": "6278892323"
+  }
+},
+{
+  "_id": {
+    "$oid": "6658bdfbca78cdef03b126df"
+  },
+  "nombre": "El Conjuntito",
+  "artista": "Omar Montes",
+  "genero": "Regaeton",
+  "fechaLanzamiento": "08-06-2024",
+  "reproducciones": {
+    "$numberLong": "8262354826"
+  }
+},
+{
+  "_id": {
+    "$oid": "6658bdfbca78cdef03b126e0"
+  },
+  "nombre": "El Patio",
+  "artista": "Delaossa",
+  "genero": "Regaeton",
+  "fechaLanzamiento": "18-01-2024",
+  "reproducciones": 7027721
+}]

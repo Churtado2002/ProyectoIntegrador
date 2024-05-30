@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulario para añadir canciones</title>
+</head>
+<body>
+    <h1>Añadir Canción</h1>
+    <form th:action="@{/songs}" th:object="${song}" method="post">
+
+        <label for="name">Nombre de la canción:</label>
+        <input type="text" id="name" th:field="*{name}" /><br/>
+
+        <label for="artist">Artista/s:</label>
+        <input type="text" id="artist" th:field="*{artist}" /><br/>
+
+        <label for="genre">Género:</label>
+        <input type="text" id="genre" th:field="*{genre}" /><br/>
+        
+                
+        <label for="releaseDate">Fecha de Lanzamiento:</label>
+        <input type="text" id="releaseDate" th:field="*{releaseDate}" /><br/>
+        
+        <label for="reproductions">Reproducciones:</label>
+        <input type="number" id="reproductions" th:field="*{reproductions}" /><br/>
+        
+        <button type="submit">Añadir Canción</button>
+    </form>
+</body>
+</html>

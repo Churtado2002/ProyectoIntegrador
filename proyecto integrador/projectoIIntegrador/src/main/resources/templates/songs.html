@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Música</title>
+</head>
+<body>
+    <h1>Canciones </h1>
+    <ul id="songsList">
+        <a th:href="@{/songs/new-song}">
+            <button>Agregar Nueva Canción</button>
+        </a>
+        <li th:each="song : ${songs}">
+            <div>
+                <!-- Ponlo en una tabla y más apañao-->
+                <p th:text="'Nombre dela canción ' + ${song.name} + ' Artista ' + ${song.artist} + ' Género ' + ${song.genre} + ' Fecha de lanzamiento ' + ${song.releaseDate} + ' Reproducciones ' + ${song.reproductions}"></p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
